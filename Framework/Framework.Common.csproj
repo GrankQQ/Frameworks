@@ -68,6 +68,7 @@
     <Compile Include="Attribute\ChineseAttribute.cs" />
     <Compile Include="Attribute\IdCardAttribute.cs" />
     <Compile Include="Attribute\EmailAttribute.cs" />
+    <Compile Include="Attribute\LogAttribute.cs" />
     <Compile Include="Attribute\PhoneAttribute.cs" />
     <Compile Include="FCache\LocalCache.cs" />
     <Compile Include="ENum\ServiceResultCode.cs" />
