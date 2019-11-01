@@ -28,6 +28,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLibrary", "CommonLibr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTableLibrary", "DataTableLibrary\DataTableLibrary.csproj", "{9EC76D9D-B6F2-4114-8D1F-E85C9BA6F967}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrankWinForm", "GrankWinForm\GrankWinForm.csproj", "{933D3C05-E271-44E9-9CFD-D79F54BA2612}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +72,10 @@ Global
 		{9EC76D9D-B6F2-4114-8D1F-E85C9BA6F967}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EC76D9D-B6F2-4114-8D1F-E85C9BA6F967}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EC76D9D-B6F2-4114-8D1F-E85C9BA6F967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{933D3C05-E271-44E9-9CFD-D79F54BA2612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{933D3C05-E271-44E9-9CFD-D79F54BA2612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{933D3C05-E271-44E9-9CFD-D79F54BA2612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{933D3C05-E271-44E9-9CFD-D79F54BA2612}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
