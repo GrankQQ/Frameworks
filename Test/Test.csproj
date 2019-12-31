@@ -67,9 +67,9 @@
       <Project>{9ec76d9d-b6f2-4114-8d1f-e85c9ba6f967}</Project>
       <Name>DataTableLibrary</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Framework.Files\FrameWork.Files.csproj">
+    <ProjectReference Include="..\Framework.Files\Framework.Files.csproj">
       <Project>{1879286e-82f5-4b79-a126-124af06329f9}</Project>
-      <Name>FrameWork.Files</Name>
+      <Name>Framework.Files</Name>
     </ProjectReference>
     <ProjectReference Include="..\LinqLibrary\LinqLibrary.csproj">
       <Project>{5fdc999f-4ecd-4913-9073-49e38eea194a}</Project>
