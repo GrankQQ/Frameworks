@@ -17,13 +17,18 @@ namespace CoreTest
         }
 
         [Test]
-        public void Test()
+        public void SortTest()
         {
+            int[] arr5 = algorithm.BubbleSort(arr);
+            arr = new int[] { 3, 6, 2, 78, 32, 77, 43, 7, 23, 64, 7 };
             int[] arr1 = algorithm.InsertSort(arr);
             arr = new int[] { 3, 6, 2, 78, 32, 77, 43, 7, 23, 64, 7 };
             int[] arr2 = algorithm.SelectSort(arr);
             arr = new int[] { 3, 6, 2, 78, 32, 77, 43, 7, 23, 64, 7 };
             int[] arr3 = algorithm.MergeSort(arr);
+            arr = new int[] { 3, 6, 2, 78, 32, 77, 43, 7, 23, 64, 7 };
+            int[] arr4 = algorithm.QuickSort(arr);
+            
             Assert.Pass();
         }
     }

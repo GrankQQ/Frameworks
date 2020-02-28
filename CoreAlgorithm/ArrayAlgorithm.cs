@@ -77,6 +77,28 @@ namespace CoreAlgorithm
         }
 
         /// <summary>
+        /// 冒泡排序
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <returns></returns>
+        public int[] BubbleSort(int[] arr)
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                for(int j = i + 1; j < arr.Length; j++)
+                {
+                    if(arr[i] > arr[j])
+                    {
+                        int temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+            return arr;
+        }
+
+        /// <summary>
         /// 插入排序 （1、排序，2、插入） 时间复杂度O(n的平方)，空间复杂度O(1)
         /// 数组 -> 已排序区间 | 未排序区间 
         ///                 |
@@ -238,21 +260,63 @@ namespace CoreAlgorithm
             }
         }
 
+        /// <summary>
+        /// 快速排序（1、分治） 时间复杂度O(nlogn)
+        /// 1、将数组随机取一位数，将比该数小的数放到该数的左边，将比该数大的数放到该数的右边
+        /// 2、再对左边和右边的数组，继续执行该过程，直到最后不能再排为止
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <returns></returns>
         public int[] QuickSort(int[] arr)
         {
             QuickSort(arr, 0, arr.Length - 1);
             return arr;
         }
 
+        /// <summary>
+        /// 快速排序
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
         public void QuickSort(int[] arr, int start, int end)
         {
-            
+            if (start >= end)
+                return;
 
+            int p = Partition(arr, start, end);
+            QuickSort(arr, start, p - 1);
+            QuickSort(arr, p + 1, end);
         }
 
-        public void QuickSort(int[] arr, int start, int middle, int end)
+        /// <summary>
+        /// 获取基准位置
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
+        /// <returns></returns>
+        public int Partition(int[] arr, int start, int end)
         {
+            int pivot = arr[end];
+            int p = start;
+            //将比基数小的放到基数左边
+            for (int j = start; j <= end - 1; j++)
+            {
+                if (arr[j] < pivot)
+                {
+                    int temp = arr[j];
+                    arr[j] = arr[p];
+                    arr[p] = temp;
+                    p++;
+                }
+            }
 
+            //将基数放到应该放的位置
+            arr[end] = arr[p];
+            arr[p] = pivot;
+
+            return p;
         }
     }
 }
